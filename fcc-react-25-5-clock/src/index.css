@@ -14,7 +14,7 @@ code {
 
 body {
   position: realative;
-  color: #591F12;
+  color: #591f12;
 }
 
 body::before {
@@ -39,12 +39,12 @@ body::before {
 }
 
 #title {
-  margin-top: 30px;
+  margin: 10px;
   height: 100px;
 }
 
 #title-p {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #br-se {
@@ -76,12 +76,8 @@ body::before {
 }
 
 #main-screen {
-  border: 5px;
-  border-radius: 30px;
-  border-style: solid;
-  border-color: #591F12;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
   text-align: center;
 }
 
@@ -93,7 +89,7 @@ body::before {
 
 #time-left {
   margin-top: 0;
-  font-size: 80px;
+  font-size: 150px;
 }
 
 #scr-buttons {

@@ -1,6 +1,6 @@
 import React from "react";
 import BreakLength from "./BreakLength";
-import {SessionLength} from "./SessionLength";
+import { SessionLength } from "./SessionLength";
 import MainScreen from "./MainScreen";
 
 export default class App extends React.Component {
@@ -129,8 +129,15 @@ export default class App extends React.Component {
     return (
       <div id="screen">
         <div id="title">
-          <p id="title-p">25 + 5 Clock</p>
+          <p id="title-p">Pomodoro Timer</p>
         </div>
+        <MainScreen
+          screenText={this.state.screenText}
+          timeLeft={this.state.timeLeft}
+          reset={this.handleReset}
+          countdown={this.countdown}
+        />
+
         <div id="br-se">
           <BreakLength
             breakDef={this.state.breakDef}
@@ -144,12 +151,7 @@ export default class App extends React.Component {
             seInc={this.handleSeIncrement}
           />
         </div>
-        <MainScreen
-          screenText={this.state.screenText}
-          timeLeft={this.state.timeLeft}
-          reset={this.handleReset}
-          countdown={this.countdown}
-        />
+
         <audio
           src="https://sampleswap.org/samples-ghost/SOUND%20EFFECTS%20and%20NOISES/Electro%20and%20Synthetic/276[kb]super_mario_bros.wav.mp3"
           id="beep"
