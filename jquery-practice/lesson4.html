@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style media="screen">
+        .special {
+          color: blue;
+        }
+      </style>
+    <title>jquery</title>
+</head>
+<body>
+    <ul class="list">
+        <li>one</li>
+        <li class="special">two</li>
+        <li>three</li>
+        <li>
+          
+          <ul class="sublist">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+          </ul>
+          
+        </li>
+      </ul>
+
+      <script>
+           //lesson4 DOM Traversal
+          $(function (){
+             /* $("li").on("click", function () {
+                  $(this).next().hide(); //hide the element on click
+                  $(this).next().remove();
+                  $(this).removeClass("special");
+                  $(this).siblings().addClass("special");
+                  $(this).parent().addClass("special");
+                  $(this).closest(".sublist").addClass("special");
+              })*/
+
+               /* $(".list").on("click", function(){
+                    //$(this).find("li").filter(":first").addClass("special");
+                    //$(this).find("li").filter(".special").remove();
+                    //$(this).find(".special").remove();
+                    //$(this).find("li").eq(-3).addClass("special");
+                })*/
+
+               /* $(".special").on("click", function(){
+                        alert("special");
+                })*/
+
+               /* $("li").on("click", function(){
+                    $(this).hide();
+                    if ($(this).is(".special")) {
+                        alert("special");
+                    }
+                    if ($(this).not(".special")) {
+                        alert("not special");
+                    }
+                    console.log("clicked li")
+                     if ($(this).parent().is(".sublist")){
+                        $(this).hide();
+                    }
+               })
+
+                /*$(".sublist li").on("click", function(){
+                    //$(this).hide();               
+                })*/
+
+
+          })
+
+
+      </script>
+    
+</body>
+</html>
