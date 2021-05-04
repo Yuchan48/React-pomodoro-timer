@@ -6,16 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lesson1.css">
     <title>Ajax jQuery</title>
+    <style>
+		body{
+			font-size: 17px;
+			font-family: arial;
+			background: #f4f4f4;
+			line-height: 1.5em;
+		}
+		header{
+			background:#333;
+			color:#fff;
+			padding:20px;
+			text-align: center;
+			border-bottom: 4px #000 solid;
+			margin-bottom: 10px;
+		}
+		#container{
+			width:90%;
+			margin:auto;
+			padding:10px;
+		}
+
+	</style>
 </head>
 <body>
-    <h1>jQuery Ajax Tutorial</h1>
-    <h2>Coffee Orders</h2>
-    <ul id="orders"></ul>
-    
-    <h4>Add a Coffee Order</h4>
-    <p>name:<input type="text" id='name'></p>
-    <p>drink: <input type="text" id ="drink"></p><br>
-    <button id='add-order'>Add!</button>
+    <header>
+		<h1>jQuery Crash Course | Ajax</h1>
+	</header>
+	<div id="container">
+		<div id="result"></div>
+		<ul id="users"></ul>
+		<h3>Add Post</h3>
+		<form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+		<input type="text" id="title" placeholder="Title"><br>
+		<textarea placeholder="Body" id="body"></textarea><br>
+		<input type="submit" value="Submit">
+		</form>
+	</div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="lesson1.js"></script>
