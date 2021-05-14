@@ -19,11 +19,11 @@ export default class MainScreen extends React.Component {
         </div>
         <div id="scr-buttons">
           <div id="start_stop" onClick={this.props.countdown}>
-            <i class="fa fa-play fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-pause fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-play fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-pause fa-2x" aria-hidden="true"></i>
           </div>
           <div id="reset" onClick={this.props.reset}>
-            <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-refresh fa-2x" aria-hidden="true"></i>
           </div>
         </div>
       </div>

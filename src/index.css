@@ -15,12 +15,14 @@ code {
 body {
   position: realative;
   color: #591f12;
+  min-height: 100vh;
 }
 
 body::before {
   content: "";
   background-image: url("https://images.unsplash.com/photo-1525127752301-99b0b6379811?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -45,6 +47,29 @@ body::before {
 
 #title-p {
   font-size: 50px;
+}
+
+/* main screen */
+#main-screen {
+  width: 350px;
+  height: 250px;
+  text-align: center;
+}
+
+#timer-label {
+  font-size: 30px;
+  margin: 20px 0;  
+}
+
+#time-left {
+  margin-top: 0;
+  font-size: 150px;
+}
+
+#scr-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 60px 0 60px; 
 }
 
 #br-se {
@@ -75,27 +100,82 @@ body::before {
   align-items: center;
 }
 
-#main-screen {
-  width: 350px;
-  height: 250px;
-  text-align: center;
-}
 
-#timer-label {
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-#time-left {
-  margin-top: 0;
-  font-size: 150px;
-}
 
-#scr-buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-right: 60px;
-  margin-left: 60px;
+
+@media (max-width: 450px){
+  #title {
+    height: 180px;
+  }
+ 
+  #title-p {
+    font-size: 40px;
+    margin: 90px 0;
+  }
+
+  #main-screen {
+    width: 90%;
+    height: 200px;
+  }
+  
+  #time-left {
+    font-size: 100px;
+    margin-top: 20px;
+  }
+
+  #break-length,
+  #session-length {
+    font-size: 30px;
+  }
+
+  #br-se {
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  #break {
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  #session {
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  #break i, #session i {
+    font-size: 27px;
+    margin: 0 13px;
+  }
+  
+  #br-buttons,
+  #se-buttons {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-height: 660px){
+    #title {
+      height: 100px;
+    }   
+  
+    #title-p {
+      font-size: 40px;
+      margin: 30px 0;
+    }
+
+     #scr-buttons {
+      margin-top: 0; 
+    }
+  
+    #timer-label {
+      margin: 10px 0;  
+    }
+   
+ 
+  
+  }
+  
 }
