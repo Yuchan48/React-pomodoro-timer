@@ -109,7 +109,7 @@ export default class App extends React.Component {
     this.beep.currentTime = 0.4;
     setTimeout(() => {
       this.beep.pause();
-    }, 2700);
+    }, 2800);
   };
 
   handleReset = () => {
