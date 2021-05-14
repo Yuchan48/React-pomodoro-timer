@@ -1,6 +1,7 @@
 # Pomodoro timer
 
 timer with session and break length built with React.js
+responsive web design. compatible for any screen size
 
 - live App : https://react-pomodoro-timer-yuchan.herokuapp.com/
 ___
@@ -12,4 +13,10 @@ ___
 
 #### image
 
+- web version
+
 ![](https://i.imgur.com/7w3sdk5m.jpg)
+
+- mobile version
+
+![](https://i.imgur.com/WajXqBfm.jpg)
